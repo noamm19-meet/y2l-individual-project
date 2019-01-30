@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportogress</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        
+    
+
+    </head>
+
+
+
+
+    <body>
+
+
+<nav style="margin-top:s "  class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('Home_page') }}"><img   <img class = "circle_pic" src="{{url_for('static', filename='logo.jpg')}}"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav" style="display: block;">
+                       <li class="">
+                            <a class="no-bg" href="{{url_for('get_session')}}">1:1 session</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('LogIn_page') }}">Login</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('Register') }}">Register</a>
+                        </li>
+                        <li class="">
+                            <a href="https://thenx.com/FAQ">F.A.Q</a>
+                        </li>
+                         <li class="nav-item">
+                          <a  class="nav-link" href="{{ url_for('sign_out') }}">Log Out</a>
+                        </li>
+                        <li class="">
+                          <p class="nav-link">   Welcome:  {{username}}</p>
+                        </li>
+               </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </nav>
+
+
+
+            
+
+              <div class="w3-content w3-section">
+ 
+
+                <img class="mySlides w3-animate-fading" src="{{url_for('static', filename='frog_stand.jpg')}}" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="{{url_for('static', filename='Lsit.jpg')}}" style="width:100%">
+                <img class="mySlides w3-animate-fading" src="{{url_for('static', filename='planche_on_tank.jpg')}}" style="width:100%">
+                
+
+              </div>
+
+                  
+
+
+      <div class="Body">
+          <div class="relative">
+              
+      </div>
+
+
+                    
+        
+      </div>
+
+              
+          
+          
+ <center>
+         
+
+        <div class="bottom">
+                <h4>Follow Us</h4>
+            
+         
+                      <a target="_blank" href="https://www.instagram.com/noamerzen/"><img src="https://thenx.com/thenx_front_resource/images/insta.png" alt="insta"></a>
+          
+          
+                      <a target="_blank" href="https://www.youtube.com/channel/UC1P2Xi4rTD-vncU_4ghRBAA/featured"><img src="https://thenx.com/thenx_front_resource/images/youtube.png" alt="youtube"></a>
+          
+      </div>
+   
+ </center>       
+
+             <!-- Add JQuery and Bootstrap JS to the page -->
+             <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+         <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+        
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 9000);    
+                }
+              </script>
+
+
+
+
+
+              <script>
+        $('#email_verification').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: "https://thenx.com/sendVerificationFromHeader",
+                beforeSend: function () {
+                    $('#loading_img').show();
+                    $('#tick_img').hide();
+                },
+                success: function () {
+                    $('#loading_img').hide();
+                    $('#tick_img').show();
+                    $('#tick_img').delay(3200).fadeOut(400);
+                },
+                error: function () {
+                    alert('Something Went Wrong , please Try Again');
+                }
+            });
+        });
+    </script>
+
+    </body>
+</html>

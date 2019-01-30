@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportogress</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        
+
+
+    </head>
+    <body>
+        <div class="navbar">
+          <div class="form-inline">
+           <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="{{ url_for('Home_page') }}"> 
+                 <img class = "circle_pic" src="{{url_for('static', filename='logo.jpg')}}">
+            </a>
+            <div class="rtl">
+                <a  href="{{ url_for('Home_page') }}">Log In</a>
+            </div>
+             
+     
+           </div>
+            
+          </div>
+            
+        </div>
+     
+
+<div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+       dg     
+</div>
+       <!-- Add JQuery and Bootstrap JS to the page -->
+       <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+       <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+       <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+
+    </body>
+</html>

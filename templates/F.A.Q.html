@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportogress</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        
+    
+
+    </head>
+
+
+
+
+    <body>
+
+
+<nav style="margin-top:s "  class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('Home_page') }}"><img   <img class = "circle_pic" src="{{url_for('static', filename='logo.jpg')}}"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav" style="display: block;">
+                       <li class="">
+                            <a class="no-bg" href="{{url_for('get_session')}}">1:1 session</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('LogIn_page') }}">Login</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('Register') }}">Register</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('FAQ_page') }}">F.A.Q</a>
+                        </li>
+                         <li class="nav-item">
+                          <a  class="nav-link" href="{{ url_for('sign_out') }}">Log Out</a>
+                        </li>
+                        <li class="">
+                          <a href="nav-link">
+                             <p class="nav-link">   Welcome:  {{username}}</p>
+                          </a>
+                         
+                        </li>
+               </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </nav>
+
+
+
+      <br><br><br><br><br><br><br><br> 
+                  
+
+
+ <div class="panel panel-default panel-faq">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-2" class="collapsed" aria-expanded="false">
+                            <span class="pull-left"><i class="glyphicon glyphicon-plus"></i></span>
+                            <h4 class="panel-title" style="margin-left:16px;">
+                                Do I need to use a gym for Sportogress workouts?
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="faq-cat-1-sub-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            Not at all. However, if you’d like more hands-on training, you can go to 1:1 session page.
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="panel panel-default panel-faq">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-4" class="collapsed" aria-expanded="false">
+                            <span class="pull-left"><i class="glyphicon glyphicon-plus"></i></span>
+                            <h4 class="panel-title" style="margin-left:16px;">
+                                What should I do if a specific week of the program is very challenging?
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="faq-cat-1-sub-4" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            Don’t fret! You can always repeat the week you’re on if you feel it was too difficult to move past.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default panel-faq">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3" class="collapsed" aria-expanded="false">
+                            <span class="pull-left"><i class="glyphicon glyphicon-plus"></i></span>
+                            <h4 class="panel-title" style="margin-left:16px;">
+                                How do I know which element to start with?
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="faq-cat-1-sub-3" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            Each element has a list of prerequisites that you should meet before attempting it. Don’t be afraid to start with the basics and work your way to the top. We all have to start somewhere, and sometimes we just need a refresher. Whichever level you start at, the exercises you do should help prepare you for the next level of difficulty!
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default panel-faq">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-11">
+                            <span class="pull-left"><i class="glyphicon glyphicon-plus"></i></span>
+                            <h4 class="panel-title" style="margin-left:16px;">
+                                I'm trying to register, but it’s not working?
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="faq-cat-1-sub-11" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Unfortunately, this happens sometimes – but don’t get discouraged! Make sure you have an active and stable Internet connection when trying to register. We recommend using a strong, secure Wi-Fi connection for a fast, effective registration.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default panel-faq">
+                    <div class="panel-heading">
+                        <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-5" class="collapsed" aria-expanded="false">
+                            <span class="pull-left"><i class="glyphicon glyphicon-plus"></i></span>
+                            <h4 class="panel-title" style="margin-left:16px;">
+                               In what areas can you meet?
+                            </h4>
+                        </a>
+                    </div>
+                    <div id="faq-cat-1-sub-5" class="panel-collapse collapse" aria-expanded="false">
+                        <div class="panel-body">
+                            Yavneel , Cadoorie school , Kfar Tavor , Tiberias , Poira , Neve Oved<br>
+                           
+                        </div>
+                    </div>
+                </div>
+
+
+                    
+       
+
+              
+          
+          
+ <center>
+       <div class="LogInClass">  
+
+        <div class="bottom">
+                <h4>Follow Us</h4>
+            
+         
+                      <a target="_blank" href="https://www.instagram.com/noamerzen/"><img src="https://thenx.com/thenx_front_resource/images/insta.png" alt="insta"></a>
+          
+          
+                      <a target="_blank" href="https://www.youtube.com/channel/UC1P2Xi4rTD-vncU_4ghRBAA/featured"><img src="https://thenx.com/thenx_front_resource/images/youtube.png" alt="youtube"></a>
+          
+      </div>
+   </div>
+ </center>       
+
+             <!-- Add JQuery and Bootstrap JS to the page -->
+             <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+         <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+        
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 9000);    
+                }
+              </script>
+
+
+
+
+
+              <script>
+        $('#email_verification').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: "https://thenx.com/sendVerificationFromHeader",
+                beforeSend: function () {
+                    $('#loading_img').show();
+                    $('#tick_img').hide();
+                },
+                success: function () {
+                    $('#loading_img').hide();
+                    $('#tick_img').show();
+                    $('#tick_img').delay(3200).fadeOut(400);
+                },
+                error: function () {
+                    alert('Something Went Wrong , please Try Again');
+                }
+            });
+        });
+    </script>
+
+    </body>
+</html>

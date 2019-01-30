@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportogress</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        
+    
+
+    </head>
+
+
+
+
+    <body>
+
+
+<nav style="margin-top:s "  class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('Home_page') }}"><img   <img class = "circle_pic" src="{{url_for('static', filename='logo.jpg')}}"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+              <ul class="nav navbar-nav" style="display: block;">
+                       <li class="">
+                            <a class="no-bg" href="{{url_for('get_session')}}">1:1 session</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('LogIn_page') }}">Login</a>
+                        </li>
+                        <li class="">
+                            <a href="{{ url_for('Register') }}">Register</a>
+                        </li>
+                        <li class="">
+                            <a href="https://thenx.com/FAQ">F.A.Q</a>
+                        </li>
+                         <li class="nav-item">
+                          <a  class="nav-link" href="{{ url_for('sign_out') }}">Log Out</a>
+                        </li>
+                        <li class="">
+                          <p class="nav-link">   Welcome:  {{username}}</p>
+                        </li>
+               </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </nav>
+
+<br><br><br>
+
+       <div id="content_box">
+      <h1 class="postsby">
+        <span>Category: Upper Body Exercises</span>
+      </h1>
+      <section id="latest-posts" class="clearfix">
+<p><img class="alignright wp-image-224 size-medium" src="https://www.street-workouts.com/wp-content/uploads/2015/12/Upper-body-muscles-300x250.jpg?5870d3" alt="Upper body exercises" width="300" height="250"><br>An upper body workout is an essential part of every street workout routine.<br>
+ If you choose the right upper body exercises and execute them properly, you will have no problem getting the strength, tone and shape you want.<br>
+  The&nbsp;upper&nbsp;body calisthenics below are a great way to strengthen&nbsp;your shoulders, biceps, triceps, chest and other upper body muscles.<br>
+   Adding variety can spice things up and new impulses will enforce muscle growth. Make sure you always do a proper warming up before you hit the streets!</p>
+<h2>HERE IS A LIST OF UPPER BODY EXERCISES:</h2>
+<p>The star rating next to each exercise indicates the intensity and difficulty of the workout.</p>
+                              <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/12/action-move-Syda-Productions-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="action street workout move" title="">              
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Switchblade</h2>
+                              <div class="post-info">
+                               
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-784 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:80%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            The switchblade is a dynamic move for advanced athletes.<br> 
+                          When you're able to perform many pull-ups and muscle-ups,<br>
+                           it's time to try something new! 
+                           <br>                </div>
+
+                                <div class="readMore">
+           
+        </div>
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+               
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2016/02/handstand-2-Syda-Productions-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="handstand - Syda Productions" title="">             
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Handstand push-up<h2>
+                              <div class="post-info">
+                                <span class="thecategory">
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-334 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:100%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            The handstand push-up – also known as the vertical push-up or press up –<br>
+                             is a push-up exercise where the body is positioned in a handstand.<br>
+                              A proper handstand push-up is performed free-standing, so without wall support.<br>
+                               This advanced move requires significant strength, as well as balance and control of the core body.                    </div>
+                                <div class="readMore">
+          
+        </div>
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+             
+                    <img width="377" height="250" src="https://www.street-workouts.com/wp-content/uploads/2016/02/Super-man-push-up-street-workout.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="Super man push-up street workout" title="" srcset="https://www.street-workouts.com/wp-content/uploads/2016/02/Super-man-push-up-street-workout.jpg 490w, https://www.street-workouts.com/wp-content/uploads/2016/02/Super-man-push-up-street-workout-300x199.jpg 300w" sizes="(max-width: 377px) 100vw, 377px">               
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Superman Push-uph</h2>
+                              <div class="post-info">
+                                
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-472 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:80%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            The superman push-up requires explosive strength and may be one of the toughest push-up variations to perform.<br>
+                             Start in the regular push-up position, with your hands at shoulder width.<br>
+                              Go down, explode upward and throw your hands out forward,<br>
+                               as though you are Superman flying through the air.<br>
+                                Once your arms are up in the air, pull up your back legs as well,<br> so that your body is completely airborne and parallel with the ground.<br>
+
+
+
+Before you start with the superman push-up you may try the clapping push-up first.&nbsp;                       </div>
+                                <div class="readMore">
+           
+        </div>
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/12/clapping-push-up-Dean-Drobot-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="clapping push-up street workout" title="">          
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Clapping Push-ups</h2>
+                              <div class="post-info">
+                                
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-384 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:70%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            Clapping push-ups are a form of plyometric exercise.<br> 
+                          This means that the movement is more dynamic and explosive than the regular push-ups which is more controlled.<br>
+                           &nbsp;Clapping push-ups are great for developing explosive strength in your arms. &nbsp;           <br>
+                                 HOW TO DO CLAPPING PUSH-UPS<br>
+
+Start in a regular push-up position with your arms at shoulder width.<br>
+
+Lower yourself to the ground until your chest almost hits the ground.<br>
+
+Push yourself up with explosive strength.<br>
+ Aim to get yourself as far off of the ground as you can.<br>
+
+Your hands should leave the ground for one or two seconds, so clap your hands before landing.     </div>
+
+                                <div class="readMore">
+           
+        </div>
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/12/one-arm-push-up-Serge-Gorenko-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="one arm push-ups street workout" title="">                
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">One arm push-ups</h2>
+                              <div class="post-info">
+                              
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-361 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:80%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            Before you start with one arm push-ups you should be able to do many (at least 30) regular push-ups easily.<br>
+                             The one&nbsp;hand&nbsp;push-up requires strong triceps and shoulders but also balance and a strong core.&nbsp;  <br>   
+
+Start in regular push-up position and place on arm on your side.<br>
+ (putting your hand on your hamstrings will give you a little extra stability and body tension).<br>
+
+
+You will feel that the wider you spread your legs the easier it becomes to keep your balance.<br>
+ The challenge here is to keep your legs as close as possible of course.<br>
+  You could start with a (lighter) inclinde one arm push-up as shown on the right.<br>
+   Once your shoulders and triceps become stronger,<br> you could move to a more horizontal position.                  </div>
+
+                                <div class="readMore">
+          
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2016/04/T-push-up-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="T-push up street workout" title="">               
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">T-Push ups</h2>
+                              <div class="post-info">
+                                
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-580 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:40%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            The T-Push up starts like a regular push up,<br> but you must rotate your body sideways&nbsp;when you push yourself up.<br>
+                             When your arms are fully stretched, your body forms a T-shape.<br> That’s why it’s called the T-Push up. &nbsp;<br>
+
+
+                            HOW TO DO THE T-PUSH UP EXERCISE<br>
+
+                            The T-push up is an easy calisthenic exercise to strengthen your shoulder joints and side abs.<br>
+                             To perform the T-Push up:<br>
+
+
+Start with your hands at shoulder width in the standard push-up position.<br>
+
+Push yourself up and lift one arm from the floor and raise it towards the ceiling whilst twisting your upper body to the side.<br>
+
+Return to the starting position with both hands on the floor.<br>
+Repeat this and alternate left and right each time you push yourself up.           </div>
+                               
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+               
+                    <img width="368" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/11/Chest-dips-woman-street-workout.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="Triceps dips woman street workout" title="" srcset="https://www.street-workouts.com/wp-content/uploads/2015/11/Chest-dips-woman-street-workout.jpg 800w, https://www.street-workouts.com/wp-content/uploads/2015/11/Chest-dips-woman-street-workout-300x204.jpg 300w, https://www.street-workouts.com/wp-content/uploads/2015/11/Chest-dips-woman-street-workout-768x522.jpg 768w" sizes="(max-width: 368px) 100vw, 368px">               
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Triceps Dips</h2>
+                              <div class="post-info">
+                              
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-48 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:60%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                          
+        
+HOW TO PERFORM TRICEPS DIPS ON A BAR<br>
+For triceps dips, find a set of parallel bars, which are often at playground.<br>
+Place one hand on each parallel bar.<br>
+Straighten your arms and keep your back straight.<br>
+Bend your knees if necessary to raise your feet off the ground.<br>
+Inhale, bend your elbows behind you and lower your body until your upper arms are parallel with the ground.<br>
+Keep your back straight throughout the movement.<br>
+Exhale, straighten your arms and return to the starting position.&nbsp;                        </div>
+                                <div class="readMore">
+           
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/11/pull-ups-GlebStock-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="Muscle ups street workout" title="">                
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Muscle-Ups</h2>
+                              <div class="post-info">
+                               
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-62 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:100%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            Begin in a hanging position with your palms facing away from you and using a false-grip.<br> Exhale, bend your elbows, keep them close to you and pull your chest up to the bar.<br>
+                             Push down on the bar and raise your hips to the bar as you straighten your arms.<br>
+                              Inhale, slowly reverse the process and return to the starting position.&nbsp;                      </div>
+                                <div class="readMore">
+          
+        </div>
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/11/Triceps-dips-Jasminko-Ibrakovic-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="Chest dips street workout" title="">               
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Chest Dips</h2>
+                              <div class="post-info">
+                             
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-57 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:80%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            Chest dips are similar to triceps dips, but they target your pectorals instead of your triceps. <br>
+                            Key is that you go lower than with triceps dips.<br>
+                             Chest dips can be performed on a straight bar or parallel bars.<br>
+
+                          Place your hands on the bar.<br>
+Straighten your arms and raise your feet off the ground.<br>
+Inhale, bend your elbows out to the sides.<br>
+This time, go lower than when your upper arms are parallel with the earth.<br>
+Sink until you feel a slight pull across your chest.<br>
+You may lean forward slightly at the bottom of the movement.<br>
+Exhale, straighten your arms and return to the starting position.&nbsp;                  </div>
+                                <div class="readMore">
+           
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                                  <article class="test latestPost post-box vertical  ">
+                        <div class="post-img">
+                
+                    <img width="390" height="250" src="https://www.street-workouts.com/wp-content/uploads/2015/11/Decline-push-up-lkoimages-390x250.jpg?5870d3" class="attachment-best-featured size-best-featured wp-post-image" alt="Decline push-up on a park bench" title="">               
+            </div>
+            <div class="post-data">
+                <div class="post-data-container">
+                    <header>
+                        <h2 class="title post-title">Decline Push-Ups</h2>
+                              <div class="post-info">
+                                
+                            <div class="review-type-star review-total-only wp-review-show-total wp-review-total-54 wp-review-total-star" style="color:#fff!important;background-color: #3498db;"> <div class="review-star">
+  <div class="review-result-wrapper">
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <i class="mts-icon-star"></i>
+    <div class="review-result" style="width:60%; color:#fff!important;">
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+      <i class="mts-icon-star"></i>
+    </div><!-- .review-result -->
+  </div><!-- .review-result-wrapper -->
+</div><!-- .review-star -->
+</div>      </div>
+                        </header>
+                                            <div class="post-excerpt">
+                            With the decline push-up it is important that you position your feet higher than your chest.<br>
+                             This can be done by placing your feet on a park bench, or on a swing for instance.<br>
+                              Place your hands on the ground and slightly wider than your shoulders.<br>
+                               Inhale, bend your elbows and lower your body.<br>
+                                Exhale, straighten your arms and return to the starting position.<br>
+                                 The higher you place your feet the greater the challenge.<br>
+                                  Ultimately you could progress towards a full handstand push.&nbsp;                       </div>
+                                <div class="readMore">
+          
+                                            </div>
+            </div>
+                    </article><!--.post-box-->
+                <!--Start Pagination-->
+              <div class="more-page-2 ajax-more-page"></div>
+            <!--End Pagination-->
+      </section><!--#latest-posts-->
+    </div>
+    <center>
+   
+        <div class="bottom">
+                <h4>Follow Us</h4>
+            
+         
+                      <a target="_blank" href="https://www.instagram.com/noamerzen/"><img src="https://thenx.com/thenx_front_resource/images/insta.png" alt="insta"></a>
+          
+          
+                      <a target="_blank" href="https://www.youtube.com/channel/UC1P2Xi4rTD-vncU_4ghRBAA/featured"><img src="https://thenx.com/thenx_front_resource/images/youtube.png" alt="youtube"></a>
+          
+      </div>
+
+ </center>       
+
+             <!-- Add JQuery and Bootstrap JS to the page -->
+             <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+         <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+         <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+        
+              <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 9000);    
+                }
+              </script>
+
+
+
+
+
+              <script>
+        $('#email_verification').on('click', function () {
+            $.ajax({
+                type: 'POST',
+                url: "https://thenx.com/sendVerificationFromHeader",
+                beforeSend: function () {
+                    $('#loading_img').show();
+                    $('#tick_img').hide();
+                },
+                success: function () {
+                    $('#loading_img').hide();
+                    $('#tick_img').show();
+                    $('#tick_img').delay(3200).fadeOut(400);
+                },
+                error: function () {
+                    alert('Something Went Wrong , please Try Again');
+                }
+            });
+        });
+    </script>
+
+    </body>
+</html>

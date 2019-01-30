@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sportogress</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        
+
+
+    </head>
+    <body background="http://img3.flowparks.com/Street-Workout-Park-Gliwice,eef,a,gaa.jpg">
+        <div class="navbar">
+          <div class="form-inline">
+           <div class="collapse navbar-collapse" id="navbarNav">
+            <a href="{{ url_for('Home_page') }}"> 
+                 <img class = "circle_pic" src="{{url_for('static', filename='logo.jpg')}}">
+            </a>
+            <div class="rtl">
+                <a  href="{{ url_for('LogIn_page') }}">Log In</a>
+            </div>
+             
+     
+           </div>
+            
+          </div>
+            
+        </div>
+    <div class="LogInClass">
+      <h1><center><font color="black">BECOME A MEMBER</font></center></h1></body><br/>
+        <center>
+          <form  action="{{url_for('Register')}}" method="post">
+            FIRST NAME: <input type="text" name="txb_fname" placeholder="First name"><br/><br/>
+            LAST NAME:  <input type="text" name="txb_lname" placeholder="Last name"><br/><br/>
+            USER NAME:<input type="text" name="txb_username" placeholder="User Name" ><br/><div style="color: red;">{{taken}}</div><br/>
+            E-MAIL: <input type="text" name="txb_email" placeholder="Email">
+            <br/><br/>
+            PASSWORD: <input type="password" name="txb_pass" placeholder="password" ><br/><br/>
+              <div style="color: red;">{{dont_match}}</div><br/>
+                        CONFIRM PASSWORD: <input type="password" name="txb_cpass" placeholder="password" ><br/><br/>
+            <input type="submit" name="btnsubmit" value="SignUp">
+          </form> 
+          </center>
+    </div>
+
+       <!-- Add JQuery and Bootstrap JS to the page -->
+       <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+       <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+       <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+
+    </body>
+</html>
