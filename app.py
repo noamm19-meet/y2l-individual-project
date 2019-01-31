@@ -4,7 +4,7 @@ from flask import Flask, render_template, url_for , request ,session, escape, re
 
 app = Flask(__name__)
 
-app.secret_key = urandom(24)
+app.secret_key = "Don't make a random secret_key! When Heroku refreshes, it makes a new secret_key"
 
 
 
