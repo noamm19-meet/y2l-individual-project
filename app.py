@@ -58,7 +58,7 @@ def get_session():
 	if session.get('username')==None:
 		return redirect(url_for('LogIn_page'))
 	if request.method== 'GET':
-		return render_template('1:1session.html' , username=session.get('username') )
+		return render_template('Session.html' , username=session.get('username') )
 	else:	
 		Element = request.form['Elements']
 		Different_element =request.form['txb_different_ex']

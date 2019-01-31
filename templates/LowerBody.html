@@ -24,6 +24,7 @@
     <body>
 
 
+
 <nav style="margin-top:s "  class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -47,20 +48,22 @@
                             <a href="{{ url_for('Register') }}">Register</a>
                         </li>
                         <li class="">
-                            <a href="https://thenx.com/FAQ">F.A.Q</a>
+                            <a href="{{ url_for('FAQ_page') }}">F.A.Q</a>
                         </li>
                          <li class="nav-item">
                           <a  class="nav-link" href="{{ url_for('sign_out') }}">Log Out</a>
                         </li>
                         <li class="">
-                          <p class="nav-link">   Welcome:  {{username}}</p>
+                          <a href="nav-link">
+                             <p class="nav-link">   Welcome:  {{username}}</p>
+                          </a>
+                         
                         </li>
                </ul>
             </div><!--/.nav-collapse -->
         </div>
 
     </nav>
-
 
 <br><br><br>
             
