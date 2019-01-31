@@ -48,7 +48,7 @@ def LogIn_page():
 		u=query_by_name(username)
 		if u is not None and u.uname==username and u.password==password:
 			session['username']=username
-			return redirect(url_for('Home_page' ))
+			return redirect(url_for('get_session' ))
 		else:
 
 			return render_template('Login.html' , wrong='wrong password or username')
